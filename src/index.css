@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    background-color: #fbcfe8;
+}
+
+@layer base{
+    body{
+        @apply font-[Verdana];
+    }
+    li{
+        @apply px-4;
+        @apply py-4;
+        @apply cursor-pointer;
+        @apply hover:bg-zinc-700;
+        @apply hover:font-bold;
+    }
+}
+
+.content-div{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 250px;
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .upr{
+        margin-top: 100px;
+    }
+  }
